@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Basketball Training Guide</title>
+</head>
+
+<body>
+
+    <h1>Basketball Training Guide</h1>
+
+    <!-- Navigation -->
+    <a href="index.html">Home</a>
+    <a href="training.html">Training Guide</a>
+
+    <hr>
+
+    <!-- Introduction -->
+    <h2>Find Your Basketball Training</h2>
+
+    <p>
+        Select a basketball skill you want to improve.
+        The website will recommend drills based on your choice.
+    </p>
+
+    <hr>
+
+    <!-- Basketball Skill Selection -->
+    <h2>Choose a Basketball Skill</h2>
+
+    <label for="skill">What do you want to improve?</label>
+
+    <select id="skill">
+        <option value="">Select a Skill</option>
+        <option value="shooting">Shooting</option>
+        <option value="handling">Ball Handling</option>
+        <option value="finishing">Finishing</option>
+        <option value="defense">Defense</option>
+        <option value="conditioning">Conditioning</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="showDrills()">Show Training Drills</button>
+
+    <hr>
+
+    <!-- Recommended Drills -->
+    <h2>Your Recommended Drills</h2>
+
+    <p id="drills">Your drills will appear here.</p>
+
+    <hr>
+
+    <!-- Training Tips -->
+    <h2>Basketball Training Tips</h2>
+
+    <ul>
+        <li>Practice consistently.</li>
+        <li>Focus on improving your weaknesses.</li>
+        <li>Work on proper technique.</li>
+        <li>Take your time learning new skills.</li>
+        <li>Stay focused during training.</li>
+    </ul>
+
+    <hr>
+
+    <p>Created by Justin Mack</p>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function showDrills() {
+
+            // Get the basketball skill selected by the user
+            var skill = document.getElementById("skill").value;
+
+            // Check which skill was selected
+            if (skill == "shooting") {
+
+                document.getElementById("drills").innerHTML =
+                    "25 Form Shots<br>50 Catch and Shoot Shots<br>20 Free Throws";
+
+            }
+
+            else if (skill == "handling") {
+
+                document.getElementById("drills").innerHTML =
+                    "30 Seconds of Crossovers<br>30 Seconds of Pound Dribbles<br>30 Seconds of Between the Legs";
+
+            }
+
+            else if (skill == "finishing") {
+
+                document.getElementById("drills").innerHTML =
+                    "20 Right Hand Layups<br>20 Left Hand Layups<br>15 Floaters";
+
+            }
+
+            else if (skill == "defense") {
+
+                document.getElementById("drills").innerHTML =
+                    "30 Seconds of Defensive Slides<br>20 Closeouts<br>30 Seconds of Defensive Stance";
+
+            }
+
+            else if (skill == "conditioning") {
+
+                document.getElementById("drills").innerHTML =
+                    "5 Court Sprints<br>2 Minutes of Jump Rope<br>3 Sets of Defensive Slides";
+
+            }
+
+            else {
+
+                document.getElementById("drills").innerHTML =
+                    "Please select a basketball skill.";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

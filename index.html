@@ -1,20 +1,82 @@
-<div class="container">
-    <div class="row">
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="col-md-4 col-12">
-            <h3>Shooting</h3>
-            <p>Improve your shooting accuracy.</p>
-        </div>
+<head>
+    <title>Basketball Training Guide</title>
+</head>
 
-        <div class="col-md-4 col-12">
-            <h3>Ball Handling</h3>
-            <p>Develop better basketball control.</p>
-        </div>
+<body>
 
-        <div class="col-md-4 col-12">
-            <h3>Defense</h3>
-            <p>Improve your defensive skills.</p>
-        </div>
+    <h1>Basketball Training Guide</h1>
 
-    </div>
-</div>
+    <!-- Navigation -->
+    <a href="index.html">Home</a>
+    <a href="training.html">Training Guide</a>
+
+    <hr>
+
+    <!-- Welcome Section -->
+    <h2>Welcome to My Basketball Website</h2>
+
+    <p>
+        This website helps basketball players ages 13-17
+        improve their skills and learn different training drills.
+    </p>
+
+    <p>
+        The goal is to help beginner and intermediate players
+        learn more about basketball.
+    </p>
+
+    <!-- JavaScript Button -->
+    <button onclick="showMessage()">Click Here</button>
+
+    <p id="message"></p>
+
+    <hr>
+
+    <!-- Basketball Skills -->
+    <h2>Basketball Skills</h2>
+
+    <p>Here are some skills you can improve:</p>
+
+    <ul>
+        <li>Shooting</li>
+        <li>Ball Handling</li>
+        <li>Finishing</li>
+        <li>Defense</li>
+        <li>Conditioning</li>
+    </ul>
+
+    <hr>
+
+    <!-- Training Guide Link -->
+    <h2>Start Training</h2>
+
+    <p>
+        Visit the training guide to choose a skill
+        and find drills to practice.
+    </p>
+
+    <a href="training.html">Go to Training Guide</a>
+
+    <hr>
+
+    <p>Created by Justin Mack</p>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function showMessage() {
+
+            document.getElementById("message").innerHTML =
+                "Welcome! Choose a skill and start improving your game.";
+
+        }
+
+    </script>
+
+</body>
+
+</html>
